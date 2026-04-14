@@ -29,7 +29,7 @@ def run_pso(x_train_scaled, y_train, x_test_scaled, y_test):
     optimizer = ps.single.GlobalBestPSO(
         n_particles=15,
         dimensions=2,
-        options={'c1': 0.7, 'c2': 0.7, 'w': 0.5},
+        options={'c1': 1.5, 'c2': 1.5, 'w': 0.7},
         bounds=bounds
     )
 
