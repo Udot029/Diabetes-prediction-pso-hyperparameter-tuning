@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
+import warnings
+warnings.filterwarnings("ignore")
 def glucose_simulation(model, scaler, X):
     glucose_range = np.linspace(50, 200, 100)
     base_sample = X.mean().values.reshape(1, -1)
